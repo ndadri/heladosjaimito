@@ -1,0 +1,118 @@
+/*Estilos generales*/
+html {
+    font-size: 16px;
+    height: 100%;
+    font-family: "DynaPuff";
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+header {
+    text-align: center;
+}
+
+@media screen and(max-width:400px) {
+    html {
+        font-size: 9.41176px;
+    }
+}
+
+.encabezado,
+.contenido,
+.piedepagina {
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(188, 188, 188);
+
+    /*Los colores de aqui pueden cambiar, solo puse para guiarnos que es cada cosa*/
+    /*Encabezado de la pagina*/
+    nav {
+        padding: 1rem;
+        margin: 0;
+        background-color: rgb(255, 195, 106);
+    }
+
+    .encabezado {
+        position: fixed;
+        top: 0;
+        bottom: 39rem;
+        left: 0;
+        right: 0;
+    }
+
+
+    /*Contenido de la pagina*/
+    main {
+        padding: 1rem;
+        margin: 0;
+        background-color: rgb(67, 67, 67);
+        flex: 1;
+    }
+
+    /*Pie de pagina*/
+    footer {
+        padding: 1rem;
+        margin: 0;
+        background-color: rgb(94, 255, 79);
+    }
+
+    .piedepagina {
+        /*Este es para que el bloque de footer no se mueva de la pantalla*/
+        position: fixed;
+        top: 42.5rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.inicio,
+.catalogo,
+.acerca {
+    /*Esto es para el menu se quede quieto junto al bloque del encabezado*/
+    display: block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+img {
+    /*lo mismo que el menu pero el logo*/
+    height: 75px;
+    width: 100px;
+    position: fixed;
+    right: 0rem;
+}
+
+/*
+.ejemplohelado {aqui se modifica la foto QUE PORFA SEA EN PNG
+    height: 100px;
+    width: 100px;
+}
+*/
+/* estilo de redes sociales*/
+.insta,
+.facebook,
+.whatsapp {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 0.1rem;
+}
+
+.insta {
+    right: 0rem;
+}
+
+.whatsapp {
+    right: 5rem;
+}
+
+.facebook {
+    right: 10rem;
+}
