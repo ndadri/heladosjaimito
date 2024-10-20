@@ -5,10 +5,12 @@ html {
     font-family: "DynaPuff";
     color: rgb(0, 0, 0);
     margin-top: 100px;
+    text-shadow: 2px 2px 5px black;
 }
 
 header {
     text-align: center;
+
 }
 
 @media screen and(max-width:400px) {
@@ -17,10 +19,21 @@ header {
     }
 }
 
+h1 {
+    font-size: 80px;
+    color: rgb(255, 182, 46);
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(179, 255, 103);
+}
+
 .encabezado,
 .contenido,
 .piedepagina {
     color: black;
+    text-align: center;
 }
 
 body {
@@ -35,6 +48,7 @@ body {
         padding: 1rem;
         margin: 0;
         background-color: rgb(255, 195, 106);
+
     }
 
     .encabezado {
@@ -52,6 +66,7 @@ body {
         margin: 0;
         background-color: rgb(67, 67, 67);
         flex: 1;
+
     }
 
     /*Pie de pagina*/
@@ -73,15 +88,35 @@ body {
 
 .inicio,
 .catalogo,
-.acerca {
+.acerca,
+li {
     /*Esto es para el menu se quede quieto junto al bloque del encabezado*/
-    display: block;
     list-style: none;
     padding: 0;
-    position: relative;
+    position: fixed;
+    flex-direction: row;
+    top: 2rem;
+    font-size: 35px;
+    color: black;
+}
+li:hover {
+    color: rgb(248, 255, 40);
+    transition: all 0.3s;
+}
+.inicio {
+    left: 22rem;
 }
 
-img {
+.catalogo {
+    left: 42rem;
+}
+
+.acerca {
+    left: 60rem;
+}
+
+.logo {
+
     /*lo mismo que el menu pero el logo*/
     height: 75px;
     width: 100px;
@@ -89,14 +124,8 @@ img {
     right: 0rem;
 }
 
-/*
-.ejemplohelado {aqui se modifica la foto QUE PORFA SEA EN PNG
-    height: 100px;
-    width: 100px;
-}
-*/
 /* estilo de redes sociales*/
-.insta,
+.maps,
 .facebook,
 .whatsapp {
     height: 50px;
@@ -105,7 +134,7 @@ img {
     bottom: 0.1rem;
 }
 
-.insta {
+.maps {
     right: 0rem;
 }
 
@@ -115,4 +144,41 @@ img {
 
 .facebook {
     right: 10rem;
+}
+
+/*Empezamos a poner estilos a las imagenes*/
+.bannana,
+.ovo,
+.artesanal {
+    font-size: 20px;
+    font-family: "Luckiest Guy";
+    color: white;
+
+}
+
+.bannanaimg {
+    height: 100px;
+    width: 100px;
+
+}
+
+
+.ovoimg {
+    height: 100px;
+    width: 100px;
+
+}
+
+.artesanalimg {
+    height: 100px;
+    width: 100px;
+
+}
+
+/*Estilo a el contenido en la clase (nosotros)*/
+.nosotros {
+    font-size: 20px;
+    font-family: "DynaPuff";
+    color: white;
+
 }
