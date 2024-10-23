@@ -1,12 +1,14 @@
+/*estilos generales de html*/
 html {
-    font-size: 16px; /* Tamaño base de la fuente */
+    font-size: 16px;
+    /* Tamaño base de la fuente */
     height: 100%;
     font-family: "DynaPuff";
     color: rgb(255, 255, 255);
     margin-top: 100px;
     text-shadow: 3px 3px 7px black;
 }
-
+/*estilos generales de header*/
 header {
     text-align: center;
 }
@@ -14,46 +16,53 @@ header {
 /* Media query para dispositivos pequeños */
 @media screen and (max-width: 400px) {
     html {
-        font-size: 9.41176px; /* Ajuste de tamaño de fuente */
+        font-size: 9.41176px;
+        /* Ajuste de tamaño de fuente */
     }
+}
+/*estilos de links*/
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Estilos de encabezados */
 h1 {
-    font-size: 5vw; /* Ajuste a vw para que escale */
+    font-size: 5vw;
+    /* Ajuste a vw para que escale */
     color: rgb(255, 182, 46);
 }
 
+/*estilos de textos*/
 h2 {
-    font-size: 3vw; /* Ajuste a vw para que escale */
+    font-size: 3vw;
+    /* Ajuste a vw para que escale */
     color: rgb(179, 255, 103);
 }
 
+/*estilos para weboficial*/
 .weboficial {
     color: rgb(255, 255, 255);
-    font-size: 2vw; /* Ajuste a vw para que escale */
+    font-size: 2vw;
+    /* Ajuste a vw para que escale */
     text-shadow: 1px 1px 3px black;
 }
 
+/*estilos para el titulo general*/
 .titulo {
-    font-size: 5vw; /* Ajuste a vw para que escale */
+    font-size: 5vw;
+    /* Ajuste a vw para que escale */
 }
 
-.texto-bienvenida {
-    font-size: 1.5vw;
-    color: white;
-}
-.textaso {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 3px black;
-}
-
-.video  {
+/*estilos para el video*/
+.video {
     display: flex;
     /*Se usa para alinear los elementos*/
     justify-content: space-around;
     /*Distribuye el espacio entre los elementos*/
 }
+
+/*estilos en comun para los contenedores de encabezado, contenido, y footer*/
 .encabezado,
 .contenido,
 .piedepagina {
@@ -61,6 +70,36 @@ h2 {
     text-align: center;
 }
 
+/*Estilos para la clase encabezado*/
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*estilos para la clase pie de pagina*/
+.piedepagina {
+    position: fixed;
+    bottom: 0;
+    /* Ajustado para que siempre esté en la parte inferior */
+    left: 0;
+    right: 0;
+}
+
+/*estilos para el texto del contenido*/
+.textaso {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+}
+
+/*estilos para el texto de bienvenida*/
+.texto-bienvenida {
+    font-size: 1.5vw;
+    color: white;
+}
+
+/*estilos generales para el cuerpo de la pagina*/
 body {
     display: flex;
     flex-direction: column;
@@ -76,13 +115,6 @@ nav {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
 }
 
-.encabezado {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
 /* Estilos para el contenido */
 main {
     padding: 5rem;
@@ -96,40 +128,48 @@ footer {
     margin: 0;
 }
 
-.piedepagina {
-    position: fixed;
-    bottom: 0; /* Ajustado para que siempre esté en la parte inferior */
-    left: 0;
-    right: 0;
-}
-
+/*estilos de imagen*/
 .cata-info {
+    /*ordena los elementos de una manera deseada*/
     display: flex;
+    /*separa a partes iguales el contenido enlistado*/
     justify-content: space-around;
 }
 
+/*estilos de las imagenes de catalogo y vaso*/
 .catalogoimg,
-.vaso,
-.infonutri {
-    width: 60%; /* Mantiene un tamaño relativo */
+.vaso {
+    width: 60%;
+    /* Mantiene un tamaño relativo */
 }
 
+/*estilos de el menú*/
 .inicio,
 .catalogo,
 .acerca,
 li {
+    /*no muestra el punto como si fuera una lista ordenada*/
     list-style: none;
+    /*"margen" dentro del que se va a poder poner el contenido*/
     padding: 0;
+    /*Para que no se mueva de la pantalla del dispositivo*/
     position: fixed;
+    /*para que este en horizontal la lista*/
     flex-direction: row;
+    /*la distancia de la que va a estar del margen*/
     top: 2rem;
-    font-size: 2vw; /* Ajuste a vw para que escale */
+    /*tamaño de las letras en vm para que escale con la pantalla*/
+    font-size: 2vw;
+    /*color de letras*/
     color: rgb(255, 255, 255);
+    /*sombra de letras*/
     text-shadow: 1px 1px 3px black;
 }
 
 li:hover {
+    /*el color cambia cuando se vaya a seleccionar*/
     color: rgb(248, 255, 40);
+    /*tiempo en el que se va a iluminar*/
     transition: all 0.3s;
 }
 
@@ -146,6 +186,7 @@ li:hover {
     left: 60%;
 }
 
+/*estilo para el logo de pagina*/
 .logo {
     width: 9%;
     position: fixed;
@@ -162,22 +203,50 @@ li:hover {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
 }
 
+.mapstext,
+.whattext,
+.facetext {
+    margin-bottom: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+/*Estilo para icono maps*/
 .maps {
-    right: 0rem;
+    right: 2rem;
+    bottom: 2rem;
 }
 
+.mapstext {
+    margin-left: 88rem;
+    margin-bottom: 0rem;
+}
+
+/*estilos para icono whatsapp*/
 .whatsapp {
-    right: 5rem;
-    bottom: 0.5rem;
-
-}
-
-.facebook {
     right: 11rem;
-    bottom: 0.5rem;
+    bottom: 2rem;
 }
 
-.catalogo-gen1, .catalogo-gen2, .catavaso {
+.whattext {
+    margin-left: 70rem;
+    margin-bottom: -1.2rem;
+}
+
+/*Estilos para icono facebook*/
+.facebook {
+    right: 21rem;
+    bottom: 2rem;
+}
+
+.facetext {
+    margin-left: 50rem;
+    margin-bottom: -1.3rem;
+}
+
+/*Estilos para las  imagenes de los catalogos*/
+.catalogo-gen1,
+.catalogo-gen2,
+.catavaso {
     display: flex;
     /*Se usa para alinear los elementos*/
     justify-content: space-around;
@@ -185,23 +254,41 @@ li:hover {
 }
 
 
-/*Empezamos a poner estilos a las imagenes*/
+/*estilos para la clase helados*/
 .helados {
     font-size: 20px;
     color: white;
 }
 
+/*Estilos unicamente para las imagenes de los helados*/
 .heladoimagen {
     width: 50%;
     aspect-ratio: 3/4;
     object-fit: contain;
 }
 
-
-
 /*Estilo a el contenido en la clase (nosotros)*/
 .nosotros {
     font-size: 20px;
     color: white;
+}
 
+/*estilos para la clase general infosemaforos*/
+.infosemafo {
+    display: flex;
+    /*Se usa para alinear los elementos*/
+    justify-content: space-around;
+    /*Distribuye el espacio entre los elementos*/
+}
+
+/*Estilos solamente para la imagen del semaforo*/
+.semaforo {
+    width: 40%;
+    border-radius: 2pc;
+}
+
+/*Estilo solamente para la imagen del la informacion sobre la nutricion*/
+.infonutri {
+    width: 50%;
+    border-radius: 2pc;
 }

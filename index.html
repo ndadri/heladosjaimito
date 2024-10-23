@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="estilos/font.css">
 </head>
 
-<body>
-    <header>
+<body><!--lo que se va a mostrar-->
+    <header><!--encabezado de la pagina-->
         <nav class="encabezado">
             <div>
-                <a href="imagenes/logo.png">
+                <a href="imagenes/logos/logo.png">
                     <img class="logo" src="imagenes/logos/logo.png" alt="logo">
                 </a>
             </div>
@@ -32,10 +32,13 @@
         </nav>
         <h2 class="titulo" id="titulo">Helados jaimito</h2>
         <h2 class="weboficial">
-            <script src="js/jaimito.js"></script>
+            <script src="js/jaimito.js"></script><!--Link con javascript-->
         </h2>
         <h2>Bienvenidos a Helados Jaimito</h2>
-
+        <div class="catavaso">
+            <img class="vaso" src="imagenes/paracatalogo/heladosvaso.png" alt="Helado Vaso">
+            </a>
+        </div>
         <h2 class="texto-bienvenida">¡Disfruta de nuestros deliciosos helados artesanales! En Helados
             Jaimito, nos apasiona crear sabores que despierten tus sentidos y te transporten a
             momentos inolvidables. Cada cucharada está hecha con amor, utilizando
@@ -44,7 +47,7 @@
         <h2></h2>
     </header>
     <!--============================Empieza todo el contenido==============================-->
-    <main class="contenido">
+    <main class="contenido"><!--Contenido de toda la pagina (main)-->
         <div class="video"><!--INTRODUCIR LINKS-->
             <iframe width="640" height="360" src="https://www.youtube.com/embed/AlmAWczZt-I?si=18EknKtQwewmOD8J"
                 title="Heladería" frameborder="0"
@@ -65,24 +68,14 @@
                 No olvides probar nuestras ediciones especiales, creadas con
                 frutas de temporada y recetas exclusivas.
             </h2>
-            <article>
-                <div class="cata-info">
+            <article class="catalogos"><!--clase general de catalogos-->
+                <div class="cata-info"><!--clases individuales de catalogos y helados-->
                     <div>
-                        <img class="catalogoimg" src="imagenes/paracatalogo/catalogo.png" alt="Catalogo">
-                        </a>
-                    </div>
-                    <div>
-                        <img class="infonutri" src="imagenes/paracatalogo/Info-nutricional.png"
-                            alt="informacion nutricional">
-                        </a>
-                    </div>
-                    <div class="catavaso">
-                        <img class="vaso" src="imagenes/paracatalogo/heladosvaso.png" alt="Helado Vaso">
+                        <img class="catalogoimg" src="imagenes/paracatalogo/Catalogonuevo.jpg" alt="Catalogo">
                         </a>
                     </div>
                 </div>
-
-                <div class="catalogo-gen1">
+                <div class="catalogo-gen1"><!--clases individuales de catalogos y helados-->
                     <div class="helados">
                         <img class="heladoimagen" src="imagenes/paracatalogo/heladoartesanal.png"
                             alt="Helado Artesanal">
@@ -98,7 +91,7 @@
                             nuestro helado es un placer que despierta los sentidos e invita a disfrutar de momentos
                             memorables.</h5>
                     </div>
-                    <div class="helados">
+                    <div class="helados"><!--clases individuales de catalogos y helados-->
                         <img class="heladoimagen" src="imagenes/paracatalogo/micheladaconovo.png"
                             alt="Michelada Con Ovo">
                         </a>
@@ -113,8 +106,8 @@
                             y refrescante.</h5>
                     </div>
                 </div>
-                <div class="catalogo-gen2">
-                    <div class="helados">
+                <div class="catalogo-gen2"><!--clases individuales de catalogos y helados-->
+                    <div class="helados"><!--clases individuales de catalogos y helados-->
                         <img class="heladoimagen" src="imagenes/paracatalogo/Tulipanjaimito.png" alt="Tulipanjaimito">
                         </a>
                         <h2>Tulipan Jaimito</h2>
@@ -130,7 +123,7 @@
                             de los sabores únicos y refrescantes,
                             ¡déjate llevar por su encanto y frescura!</h5>
                     </div>
-                    <div class="helados">
+                    <div class="helados"><!--clases individuales de catalogos y helados-->
                         <img class="heladoimagen" src="imagenes/paracatalogo/Bannanajaimito.png" alt="Bannana Jaimito">
                         </a>
                         <h2>Bannana Jaimito</h2>
@@ -147,12 +140,24 @@
                     </div>
                 </div>
             </article>
-            <div class="nosotros">
+            <h1>Nutricion</h1>
+            <div class="infosemafo"><!--clases individuales de catalogos y helados-->
+                <div>
+                    <img class="infonutri" src="imagenes/paracatalogo/Info-nutricional.png"
+                        alt="informacion nutricional">
+                    </a>
+                </div>
+                <div>
+                    <img class="semaforo" src="imagenes/paracatalogo/semaforo.jpg" alt="semaforo">
+                    </a>
+                </div>
+            </div>
+            <div class="nosotros"><!--clases individuales de catalogos y helados-->
                 <h1 id="acerca">
                     Acerca de Nosotros
                 </h1>
-                <h2 class="textaso">
-                    <h2 class="texto-bienvenida">
+                <h2 class="textaso"><!--clases individuales de catalogos y helados-->
+                    <h2 class="texto-bienvenida"><!--clases individuales de catalogos y helados-->
                         Helados Jaimito es una heladería familiar
                         con más de 30 años de experiencia en la elaboración de
                         helados artesanales. Fundada con la idea de compartir la
@@ -170,20 +175,28 @@
             </div>
         </b>
     </main>
-    <footer class="piedepagina">
-        <b><!--redes sociales o algo parecido por ahi vemos jeje-->
-            <a href="https://www.facebook.com/MaracuICE"
-                target="_blank"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
+    <footer class="piedepagina"><!--pie de pagina, donde van las redes sociales-->
+        <b>
+            <!--redireccion-->
+            <div class="facetext">
+                <a href="https://www.facebook.com/MaracuICE" target="_blank"
+                    onclick="mostrarAlertaFace(event)">Facebook</a><!--"onclick="mostrarAlerta(what,face y ubi)(event)"" se usa junto a javascript-->
                 <img class="facebook" src="imagenes/logos/facebook.png" alt="facebook">
+            </div>
+            <!--redireccion hacia whatsapp-->
+            <div class="whattext">
                 <a href="https://api.whatsapp.com/send?phone=%2B593960497777&context=ARAor2U0PPXKoWU3tWVdnvONZnQZACDiIa3jbT1hEnJF_
                 hMR4Zoki0eHdmWUUpaSfa2aFldd1aQYm8Q98BGQscBXNI0klTnEHKmuDJKi5MWMWb94N_yt8GR_Y80oPs9czJOk0Q3dx-2lN7At7JHupCqidg&source=
                 FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGFCXVleHRuA2FlbQIxMAABHZ17WSL32Cb7-6GyPkJc6lkiS0vxjiAdTshuVh
-                vqQ21Tm1wg_tjF4s2sfg_aem_ymqBJ85RTU6Pl4WqVuNHrA"
-                    target="_blank"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
-                    <img class="whatsapp" src="imagenes/logos/whatsapp.png" alt="whatsapp">
-                    <a href="https://maps.app.goo.gl/1yEPJG8sRsAWS2Dn7"
-                        target="_blank"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
-                        <img class="maps" src="imagenes/logos/maps.png" alt="maps">
+                vqQ21Tm1wg_tjF4s2sfg_aem_ymqBJ85RTU6Pl4WqVuNHrA" target="_blank"
+                    onclick="mostrarAlertaWhat(event)">WhatsApp</a><!--"onclick="mostrarAlerta(what,face y ubi)(event)"" se usa junto a javascript-->
+                <img class="whatsapp" src="imagenes/logos/whatsapp.png" alt="whatsapp">
+            </div>
+            <div class="mapstext">
+                <a href="https://maps.app.goo.gl/1yEPJG8sRsAWS2Dn7" target="_blank"
+                    onclick="mostrarAlertaUbi(event)">Ubicacion</a><!--"onclick="mostrarAlerta(what,face y ubi)(event)"" se usa junto a javascript-->
+                <img class="maps" src="imagenes/logos/maps.png" alt="maps">
+            </div>
         </b>
 </body>
 
