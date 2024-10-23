@@ -1,50 +1,59 @@
-/*Estilos generales*/
 html {
-    font-size: 16px;
+    font-size: 16px; /* Tamaño base de la fuente */
     height: 100%;
     font-family: "DynaPuff";
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 100px;
     text-shadow: 3px 3px 7px black;
-
 }
 
 header {
     text-align: center;
-
 }
 
-@media screen and(max-width:400px) {
+/* Media query para dispositivos pequeños */
+@media screen and (max-width: 400px) {
     html {
-        font-size: 9.41176px;
+        font-size: 9.41176px; /* Ajuste de tamaño de fuente */
     }
 }
 
+/* Estilos de encabezados */
 h1 {
-    font-size: 80px;
+    font-size: 5vw; /* Ajuste a vw para que escale */
     color: rgb(255, 182, 46);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 3vw; /* Ajuste a vw para que escale */
     color: rgb(179, 255, 103);
 }
 
 .weboficial {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 2vw; /* Ajuste a vw para que escale */
     text-shadow: 1px 1px 3px black;
 }
 
 .titulo {
-    font-size: 80px;
+    font-size: 5vw; /* Ajuste a vw para que escale */
 }
 
+.texto-bienvenida {
+    font-size: 1.5vw;
+    color: white;
+}
 .textaso {
-    color: black;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
 }
 
+.video  {
+    display: flex;
+    /*Se usa para alinear los elementos*/
+    justify-content: space-around;
+    /*Distribuye el espacio entre los elementos*/
+}
 .encabezado,
 .contenido,
 .piedepagina {
@@ -57,61 +66,65 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: radial-gradient(rgb(0, 255, 13), rgb(255, 153, 0));
+}
 
-    /*Los colores de aqui pueden cambiar, solo puse para guiarnos que es cada cosa*/
-    /*Encabezado de la pagina*/
-    nav {
-        padding: 1rem;
-        margin: 0;
-        background-color: #E0B31B;
-        filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
-    }
+/* Estilos para el encabezado */
+nav {
+    padding: 3rem;
+    margin: 0;
+    background-color: #5f5f5f;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+}
 
-    .encabezado {
-        position: fixed;
-        top: 0;
-        bottom: 39rem;
-        left: 0;
-        right: 0;
-    }
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
+/* Estilos para el contenido */
+main {
+    padding: 5rem;
+    padding-top: 0rem;
+    background: none;
+}
 
-    /*Contenido de la pagina*/
-    main {
-        padding: 5rem;
-        padding-top: 0rem;
-        background: none;
-    }
+/* Estilos para el pie de página */
+footer {
+    padding: 1rem;
+    margin: 0;
+}
 
-    /*Pie de pagina*/
-    footer {
-        padding: 1rem;
-        margin: 0;
+.piedepagina {
+    position: fixed;
+    bottom: 0; /* Ajustado para que siempre esté en la parte inferior */
+    left: 0;
+    right: 0;
+}
 
-    }
+.cata-info {
+    display: flex;
+    justify-content: space-around;
+}
 
-    .piedepagina {
-        /*Este es para que el bloque de footer no se mueva de la pantalla*/
-        position: fixed;
-        top: 42rem;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+.catalogoimg,
+.vaso,
+.infonutri {
+    width: 60%; /* Mantiene un tamaño relativo */
 }
 
 .inicio,
 .catalogo,
 .acerca,
 li {
-    /*Esto es para el menu se quede quieto junto al bloque del encabezado*/
     list-style: none;
     padding: 0;
     position: fixed;
     flex-direction: row;
     top: 2rem;
-    font-size: 35px;
-    color: black;
+    font-size: 2vw; /* Ajuste a vw para que escale */
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
 }
 
@@ -120,33 +133,30 @@ li:hover {
     transition: all 0.3s;
 }
 
+/* Ajustes de posición para los elementos del menú */
 .inicio {
-    left: 22rem;
+    left: 22%;
 }
 
 .catalogo {
-    left: 42rem;
+    left: 42%;
 }
 
 .acerca {
-    left: 60rem;
+    left: 60%;
 }
 
 .logo {
-
-    /*lo mismo que el menu pero el logo*/
-    height: 75px;
-    width: 100px;
+    width: 9%;
     position: fixed;
-    right: 0rem;
+    right: 3rem;
 }
 
-/* estilo de redes sociales*/
+/* Estilo de redes sociales */
 .maps,
 .facebook,
 .whatsapp {
-    height: 50px;
-    width: 50px;
+    width: 3%;
     position: fixed;
     bottom: 0.1rem;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
@@ -154,9 +164,6 @@ li:hover {
 
 .maps {
     right: 0rem;
-    height: 45px;
-    width: 45px;
-    bottom: 0.5rem;
 }
 
 .whatsapp {
@@ -170,12 +177,13 @@ li:hover {
     bottom: 0.5rem;
 }
 
-.catalogo-gen {
+.catalogo-gen1, .catalogo-gen2, .catavaso {
     display: flex;
     /*Se usa para alinear los elementos*/
     justify-content: space-around;
     /*Distribuye el espacio entre los elementos*/
 }
+
 
 /*Empezamos a poner estilos a las imagenes*/
 .helados {
@@ -184,10 +192,12 @@ li:hover {
 }
 
 .heladoimagen {
-    width: 200px;
+    width: 50%;
     aspect-ratio: 3/4;
     object-fit: contain;
 }
+
+
 
 /*Estilo a el contenido en la clase (nosotros)*/
 .nosotros {

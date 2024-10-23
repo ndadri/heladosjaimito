@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="imagenes" sizes="32x32" href="imagenes/Helao.png">
+    <link rel="icon" type="imagenes" sizes="32x32" href="imagenes/logos/Helao.png">
     <title>Helados Jaimito</title>
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/font.css">
@@ -15,11 +15,11 @@
         <nav class="encabezado">
             <div>
                 <a href="imagenes/logo.png">
-                    <img class="logo" src="imagenes/logo.png" alt="logo">
+                    <img class="logo" src="imagenes/logos/logo.png" alt="logo">
                 </a>
             </div>
             <b><!--Encabezado donde va a ir todos las redirecciones dentro de la misma pagina (menu)-->
-                <div class="inicio"><a href="">
+                <div class="inicio"><a href="#titulo">
                         <li>Inicio</li>
                     </a></div>
                 <div class="catalogo"><a href="#catalogo">
@@ -30,42 +30,120 @@
                     </a></div>
             </b>
         </nav>
-        <h2 class="titulo">Helados jaimito</h2>
+        <h2 class="titulo" id="titulo">Helados jaimito</h2>
         <h2 class="weboficial">
             <script src="js/jaimito.js"></script>
         </h2>
+        <h2>Bienvenidos a Helados Jaimito</h2>
+
+        <h2 class="texto-bienvenida">¡Disfruta de nuestros deliciosos helados artesanales! En Helados
+            Jaimito, nos apasiona crear sabores que despierten tus sentidos y te transporten a
+            momentos inolvidables. Cada cucharada está hecha con amor, utilizando
+            ingredientes frescos y de alta calidad, seleccionados cuidadosamente para garantizar una experiencia única.
+        </h2>
+        <h2></h2>
     </header>
     <!--============================Empieza todo el contenido==============================-->
     <main class="contenido">
+        <div class="video"><!--INTRODUCIR LINKS-->
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/AlmAWczZt-I?si=18EknKtQwewmOD8J"
+                title="Heladería" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen><!--IFRAME es para sacar contenido multimedia de una pagina externa-->
+            </iframe>
+        </div>
         <b><!--Doonde va a ir toda la informacion de la primera pagina, fotos, catalogo, sobre nosotros y demas-->
             <h1 id="catalogo">
                 CATALOGO
             </h1>
+            <h2>Nuestro Catálogo</h2>
+            <h2 class="texto-bienvenida">
+                Descubre nuestra variedad de sabores únicos,
+                desde clásicos como chocolate y vainilla hasta combinaciones
+                innovadoras como mango con chile y café con nueces. También
+                ofrecemos opciones sin lactosa y veganas para que todos puedan disfrutar.
+                No olvides probar nuestras ediciones especiales, creadas con
+                frutas de temporada y recetas exclusivas.
+            </h2>
             <article>
-                <div class="catalogo-gen">
-                    <div class="helados">
-                        <a href="imagenes/Bannanajaimito.png">
-                            <img class="heladoimagen" src="imagenes/Bannanajaimito.png" alt="Bannana Jaimito">
+                <div class="cata-info">
+                    <div>
+                        <img class="catalogoimg" src="imagenes/paracatalogo/catalogo.png" alt="Catalogo">
                         </a>
-                        <h2>Bannana Jaimito</h2>
                     </div>
+                    <div>
+                        <img class="infonutri" src="imagenes/paracatalogo/Info-nutricional.png"
+                            alt="informacion nutricional">
+                        </a>
+                    </div>
+                    <div class="catavaso">
+                        <img class="vaso" src="imagenes/paracatalogo/heladosvaso.png" alt="Helado Vaso">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="catalogo-gen1">
                     <div class="helados">
-                        <a href="imagenes/heladoartesanal.png">
-                            <img class="heladoimagen" src="imagenes/heladoartesanal.png" alt="Helado Artesanal">
+                        <img class="heladoimagen" src="imagenes/paracatalogo/heladoartesanal.png"
+                            alt="Helado Artesanal">
                         </a>
                         <h2>Helado Artesanal</h2>
+                        <h5>Sumérgete en la experiencia de nuestro helado artesanal, elaborado con ingredientes frescos
+                            y de la más alta calidad.
+                            Cada cucharada es un viaje de sabores, desde la cremosidad de la leche local hasta la
+                            intensidad de las frutas de temporada.
+                            Sin aditivos ni conservantes, nuestro helado se elabora en pequeños lotes, garantizando
+                            frescura y autenticidad en cada sabor.
+                            Perfecto para los amantes del dulce que buscan un toque gourmet,
+                            nuestro helado es un placer que despierta los sentidos e invita a disfrutar de momentos
+                            memorables.</h5>
                     </div>
                     <div class="helados">
-                        <a href="imagenes/micheladaconovo.png">
-                            <img class="heladoimagen" src="imagenes/micheladaconovo.png" alt="Michelada Con Ovo">
+                        <img class="heladoimagen" src="imagenes/paracatalogo/micheladaconovo.png"
+                            alt="Michelada Con Ovo">
                         </a>
                         <h2>Michelada Con Ovo</h2>
+                        <h5>Disfruta de nuestra innovadora michelada con ovo, una explosión de sabores que redefine esta
+                            bebida clásica.
+                            Combina la frescura de la cerveza con un toque de limón, salsa picante y especias, realzado
+                            por un huevo batido que aporta una textura suave y cremosa.
+                            Cada sorbo es una mezcla perfecta de salado, ácido y picante, ideal para acompañar tus
+                            mejores momentos. Servida en un vaso escarchado con sal y especias,
+                            nuestra michelada con ovo es la elección perfecta para quienes buscan una experiencia única
+                            y refrescante.</h5>
                     </div>
+                </div>
+                <div class="catalogo-gen2">
                     <div class="helados">
-                        <a href="imagenes/Tulipanjaimito.png">
-                            <img class="heladoimagen" src="imagenes/Tulipanjaimito.png" alt="Tulipanjaimito">
+                        <img class="heladoimagen" src="imagenes/paracatalogo/Tulipanjaimito.png" alt="Tulipanjaimito">
                         </a>
                         <h2>Tulipan Jaimito</h2>
+                        <h5>Deléitate con nuestro helado 'Tulipán', una creación que captura la esencia de la primavera
+                            en cada cucharada.
+                            Este helado artesanal combina la suavidad de la crema con un delicado sabor a flores y
+                            frutas, evocando la frescura
+                            de un jardín en plena floración. Con un toque sutil de vainilla y notas frutales, cada
+                            bocado es un homenaje a l
+                            a belleza natural Decorado con un toque de salsa de frutas y pétalos comestibles, el helado
+                            'Tulipán' no solo es un
+                            deleite para el paladar, sino también una joya. visual en tu mesa Perfecto para los amantes
+                            de los sabores únicos y refrescantes,
+                            ¡déjate llevar por su encanto y frescura!</h5>
+                    </div>
+                    <div class="helados">
+                        <img class="heladoimagen" src="imagenes/paracatalogo/Bannanajaimito.png" alt="Bannana Jaimito">
+                        </a>
+                        <h2>Bannana Jaimito</h2>
+                        <h5>Sumérgete en el placer decadente de nuestro banana split, un clásico que nunca pasa de moda.
+                            Este delicioso postre comienza con una banana perfectamente madura, cortada a la mitad y
+                            acompañada
+                            de tres bolas de helado de sabores irresistibles: vainilla, chocolate y fresa. Todo esto se
+                            baña
+                            en generosas cantidades de salsa de chocolate y caramelo, y se adorna con nueces crujientes,
+                            crema
+                            batida y una cereza fresca en la cima. Cada bocado es una explosión de sabores y texturas,
+                            convirtiéndolo en el postre ideal para compartir o disfrutar. en momentos especiales
+                            ¡Déjate llevar por la dulzura y la nostalgia de este exquisito banana split!</h5>
                     </div>
                 </div>
             </article>
@@ -74,28 +152,38 @@
                     Acerca de Nosotros
                 </h1>
                 <h2 class="textaso">
-                    Bienvenidos a Helados Jaimito
-                    Disfruta de nuestros deliciosos helados artesanales.
-
-                    Nuestro Catálogo
-                    Descubre nuestra variedad de sabores únicos.
-
-                    Acerca de Nosotros
-                    Helados Jaimito es una heladería familiar con más de 30 años de experiencia en la elaboración de
-                    helados artesanales.
+                    <h2 class="texto-bienvenida">
+                        Helados Jaimito es una heladería familiar
+                        con más de 30 años de experiencia en la elaboración de
+                        helados artesanales. Fundada con la idea de compartir la
+                        pasión por el helado, nuestra familia ha mantenido la
+                        tradición de producir helados en pequeños lotes, asegurando
+                        frescura y autenticidad en cada sabor. Nos enorgullece
+                        ofrecer un producto que no solo es delicioso, sino que
+                        también honra nuestras raíces y la calidad que nos distingue.
+                        Ven y vive la experiencia de Helados Jaimito,
+                        donde cada helado cuenta una historia y cada visita
+                        es un motivo para celebrar. ¡Te esperamos con los brazos
+                        abiertos y un helado en la mano!
+                    </h2>
                 </h2>
             </div>
         </b>
     </main>
-
     <footer class="piedepagina">
         <b><!--redes sociales o algo parecido por ahi vemos jeje-->
-            <a href="https://www.facebook.com/MaracuICE"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
-                <img class="facebook" src="imagenes/facebook.png" alt="facebook">
-                <a href="imagenes/whatsapp.png"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
-                    <img class="whatsapp" src="imagenes/whatsapp.png" alt="whatsapp">
-                    <a href="https://maps.app.goo.gl/1yEPJG8sRsAWS2Dn7"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
-                        <img class="maps" src="imagenes/maps.png" alt="maps">
+            <a href="https://www.facebook.com/MaracuICE"
+                target="_blank"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
+                <img class="facebook" src="imagenes/logos/facebook.png" alt="facebook">
+                <a href="https://api.whatsapp.com/send?phone=%2B593960497777&context=ARAor2U0PPXKoWU3tWVdnvONZnQZACDiIa3jbT1hEnJF_
+                hMR4Zoki0eHdmWUUpaSfa2aFldd1aQYm8Q98BGQscBXNI0klTnEHKmuDJKi5MWMWb94N_yt8GR_Y80oPs9czJOk0Q3dx-2lN7At7JHupCqidg&source=
+                FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGFCXVleHRuA2FlbQIxMAABHZ17WSL32Cb7-6GyPkJc6lkiS0vxjiAdTshuVh
+                vqQ21Tm1wg_tjF4s2sfg_aem_ymqBJ85RTU6Pl4WqVuNHrA"
+                    target="_blank"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
+                    <img class="whatsapp" src="imagenes/logos/whatsapp.png" alt="whatsapp">
+                    <a href="https://maps.app.goo.gl/1yEPJG8sRsAWS2Dn7"
+                        target="_blank"><!--Aqui poner fotos de los tipos de helados y una descripcion (solo cambiar la referencia y el nombre alterno)-->
+                        <img class="maps" src="imagenes/logos/maps.png" alt="maps">
         </b>
 </body>
 
