@@ -5,7 +5,8 @@ html {
     font-family: "DynaPuff";
     color: rgb(0, 0, 0);
     margin-top: 100px;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 3px 3px 7px black;
+
 }
 
 header {
@@ -29,6 +30,21 @@ h2 {
     color: rgb(179, 255, 103);
 }
 
+.weboficial {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.titulo {
+    font-size: 80px;
+}
+
+.textaso {
+    color: black;
+    text-shadow: 1px 1px 3px black;
+}
+
 .encabezado,
 .contenido,
 .piedepagina {
@@ -40,15 +56,15 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: rgb(188, 188, 188);
+    background: radial-gradient(rgb(0, 255, 13), rgb(255, 153, 0));
 
     /*Los colores de aqui pueden cambiar, solo puse para guiarnos que es cada cosa*/
     /*Encabezado de la pagina*/
     nav {
         padding: 1rem;
         margin: 0;
-        background-color: rgb(255, 195, 106);
-
+        background-color: #E0B31B;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
     }
 
     .encabezado {
@@ -62,24 +78,22 @@ body {
 
     /*Contenido de la pagina*/
     main {
-        padding: 1rem;
-        margin: 0;
-        background-color: rgb(67, 67, 67);
-        flex: 1;
-
+        padding: 5rem;
+        padding-top: 0rem;
+        background: none;
     }
 
     /*Pie de pagina*/
     footer {
         padding: 1rem;
         margin: 0;
-        background-color: rgb(94, 255, 79);
+
     }
 
     .piedepagina {
         /*Este es para que el bloque de footer no se mueva de la pantalla*/
         position: fixed;
-        top: 42.5rem;
+        top: 42rem;
         bottom: 0;
         left: 0;
         right: 0;
@@ -98,11 +112,14 @@ li {
     top: 2rem;
     font-size: 35px;
     color: black;
+    text-shadow: 1px 1px 3px black;
 }
+
 li:hover {
     color: rgb(248, 255, 40);
     transition: all 0.3s;
 }
+
 .inicio {
     left: 22rem;
 }
@@ -132,53 +149,49 @@ li:hover {
     width: 50px;
     position: fixed;
     bottom: 0.1rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
 }
 
 .maps {
     right: 0rem;
+    height: 45px;
+    width: 45px;
+    bottom: 0.5rem;
 }
 
 .whatsapp {
     right: 5rem;
+    bottom: 0.5rem;
+
 }
 
 .facebook {
-    right: 10rem;
+    right: 11rem;
+    bottom: 0.5rem;
+}
+
+.catalogo-gen {
+    display: flex;
+    /*Se usa para alinear los elementos*/
+    justify-content: space-around;
+    /*Distribuye el espacio entre los elementos*/
 }
 
 /*Empezamos a poner estilos a las imagenes*/
-.bannana,
-.ovo,
-.artesanal {
+.helados {
     font-size: 20px;
-    font-family: "Luckiest Guy";
     color: white;
-
 }
 
-.bannanaimg {
-    height: 100px;
-    width: 100px;
-
-}
-
-
-.ovoimg {
-    height: 100px;
-    width: 100px;
-
-}
-
-.artesanalimg {
-    height: 100px;
-    width: 100px;
-
+.heladoimagen {
+    width: 200px;
+    aspect-ratio: 3/4;
+    object-fit: contain;
 }
 
 /*Estilo a el contenido en la clase (nosotros)*/
 .nosotros {
     font-size: 20px;
-    font-family: "DynaPuff";
     color: white;
 
 }
